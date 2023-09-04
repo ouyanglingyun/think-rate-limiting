@@ -1,0 +1,24 @@
+{
+    "name": "lingyun/think-rate-limiting",
+    "authors": [
+        {
+            "name": "ouyanglingyun",
+            "email": "582194733@qq.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "think\\RateLimiterService"
+            ]
+        }
+    }
+}
