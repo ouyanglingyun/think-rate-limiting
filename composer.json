@@ -1,5 +1,7 @@
 {
     "name": "lingyun/think-rate-limiting",
+    "type": "think-extend",
+    "description": "基于 ThinkPHP 缓存实现的限流器，提供了一个简单的方法来限制指定时间内的任何操作。",
     "authors": [
         {
             "name": "ouyanglingyun",
