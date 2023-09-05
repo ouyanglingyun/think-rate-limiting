@@ -12,7 +12,6 @@
 <a name="installation"></a>
 
 ## 安装
----
 通过 Composer 包管理器安装 **think-think-rate-limiting** :
 
 ```
@@ -22,7 +21,6 @@ composer require lingyun/think-rate-limiting
 <a name="config"></a>
 
 ## 缓存配置
----
 通常情况下，限流器使用你默认的缓存驱动，由 `cache` 配置文件中的 `default` 键定义。你也可以通过在你的应用程序的 `cache` 配置文件中定义一个 `limiter` 来指定限流器应该使用哪一个缓存来驱动：
 
 ```
@@ -50,7 +48,6 @@ return [
 <a name="basicUsage"></a>
 
 ## 基础用法
----
 可以通过 `think\facade\RateLimiter` 来操作限流器。限流器提供的最简单的方法是 `attempt` 方法，它将一个给定的回调函数执行次数限制在一个给定的秒数内。
 
 当回调函数执行次数超过限制时， `attempt` 方法返回 `false` ；否则 `attempt` 方法将返回回调的结果或 `true` 。 `attempt` 方法接受的第一个参数是一个速率限制器 `key` ，它可以是你选择的任何字符串，代表被限制速率的动作：
